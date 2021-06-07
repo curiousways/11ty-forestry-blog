@@ -7,6 +7,7 @@
     "clean": "rimraf _site",
     "serve:webpack": "webpack --mode development --watch",
     "serve:eleventy": "ELEVENTY_ENV=development eleventy --serve",
+    "serve:gulp": "npx gulp && npx gulp watch",
     "serve": "npm-run-all clean --parallel serve:*",
     "build:webpack": "webpack --mode production",
     "build:eleventy": "ELEVENTY_ENV=production eleventy",
@@ -26,7 +27,10 @@
     "rimraf": "^3.0.2",
     "tailwindcss": "^2.0.1",
     "webpack": "^4.44.2",
-    "webpack-cli": "^3.3.12"
+    "webpack-cli": "^3.3.12",
+    "get-google-fonts": "^1.2.2",
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.1.0"
   },
   "dependencies": {
     "postcss": "^8.1.7"
