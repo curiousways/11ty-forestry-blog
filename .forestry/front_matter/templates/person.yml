@@ -16,3 +16,5 @@ fields:
   config:
     maxSize: 5
   label: image
+pages:
+- src/people/ux-designer-intern.md
