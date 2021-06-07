@@ -1,0 +1,8 @@
+<div class="posts mt-12 grid grid-cols-3 gap-8">
+    {% for item in pagination.items %}
+    <div class="bg-white rounded-sm shadow-lg border-gray-700 border p-8">
+        <a href="{{ item.url }}" class="text-xl text-gray-900">{{ item.data.title }}</a>
+        <p>{{item.data.date}}</p>
+    </div>
+    {% endfor %}
+</div>

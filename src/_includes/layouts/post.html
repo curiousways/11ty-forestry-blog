@@ -1,0 +1,13 @@
+{% extends "layouts/base.html" %} 
+{% block content %}
+
+<article class="py-16">  
+    <h1 class="text-6xl">{{title}}</h1>  
+    <p class="text-md text-gray-500">{{date}}</p>
+    <div class="text-red mt-8">
+      {{ content | safe }}
+    </div>
+</article>
+
+
+{% endblock %}

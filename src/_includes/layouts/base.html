@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/assets/main.css" />
+    <title>Document</title>
+</head>
+<body>
+     <div class="px-12 md:px-20">
+      {% include "partials/nav.html" %}
+
+      <main>
+        {% block content %}{% endblock %}
+      </main>
+
+    </div>
+    <footer class="px-12 md:px-20 py-12 bg-black text-white">
+      <div>
+        <p>FOOTER!!!!!!!!!!!</p>
+      </div>
+    </footer>
+</body>
+</html>
